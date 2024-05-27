@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color:  #dda0dd;
+}
+
+header {
+    background-color: #1e1e1e;
+    color:  #dda0dd;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #444;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+.nav-link {
+    color: #6495ed;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #dda0dd;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-section {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    position: relative;
+}
+
+.artist-img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    filter: grayscale(50%);
+}
+
+.post-it {
+    background-color: #3a3a3a;
+    border: 2px dashed #6495ed;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+    color: #fff;
+}
+
+.post-it.circle {
+    border-radius: 50%;
+}
+
+.post-it:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background-color: #6495ed;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.post-it h2 {
+    font-size: 1.8em;
+    color: #dda0dd;
+    margin: 0 0 10px;
+}
+
+.post-it p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #6495ed;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #dda0dd;
+}
+
+.curious-facts {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.curious-facts h2 {
+    font-size: 2em;
+}
